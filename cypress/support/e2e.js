@@ -15,6 +15,21 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-mochawesome-reporter/register';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+require('cypress-terminal-report/src/installLogsCollector')(
+    {
+        collectTypes: [
+            "cons:log",
+            "cons:info",
+            "cons:warn",
+            "cons:error",
+            "cy:log",
+            "cy:request",
+            "cy:command",
+            // "cy:xhr"
+        ],
+    }
+);
