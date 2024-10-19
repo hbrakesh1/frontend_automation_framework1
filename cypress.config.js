@@ -9,7 +9,7 @@ module.exports = defineConfig({
         inlineAssets: true,
         saveAllAttempts: true,
         reportFilename: "[status]_[datetime]-[name]-report",
-        timestamp: "longDate",
+        timestamp: "dddd, mmmm dS, yyyy, h:MM:ss TT",
         reportDir: "cypress/cypress-tests/reports/html",
         reportTitle: "customer-report",
         showSkipped: true,
