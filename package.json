@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf node_modules",
     "cypress:open": "cypress install && cypress open --e2e --browser=chrome",
-    "cypress run": "cypress install && cypress run --e2e --browser=chrome",
+    "cypress:run": "cypress install && cypress run --e2e --browser=chrome",
     "spec": "cypress install && cypress run --e2e --browser=chrome --spec cypress/e2e/spec.cy.js"
   },
   "keywords": [],
