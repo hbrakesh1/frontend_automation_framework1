@@ -1,0 +1,18 @@
+{
+  "name": "frontend_automation_framework1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "cypress:open": "cypress install && cypress open --e2e --browser=chrome",
+    "cypress run": "cypress install && cypress run --e2e --browser=chrome",
+    "spec": "cypress install && cypress run --e2e --browser=chrome --spec cypress/e2e/spec.cy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.15.0"
+  }
+}
